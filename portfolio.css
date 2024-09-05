@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url("https://img.freepik.com/free-photo/galaxy-night-landscape_23-2148895320.jpg");
+    background-size: cover;
+    color: white;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #00f;
+}
+
+.links {
+    list-style-type: none;
+    display: flex;
+}
+
+.links li {
+    margin-left: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: blue;
+}
+
+.links a::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.links a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.main-container {
+    padding: 100px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.static-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.typewriter {
+    list-style: none;
+    height: 40px;
+    overflow: hidden;
+    color: blue;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.typewriter li {
+    position: relative;
+    animation: typing 4s steps(20) infinite;
+}
+
+@keyframes typing {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-40px);
+    }
+    50% {
+        transform: translateY(-80px);
+    }
+    75% {
+        transform: translateY(-120px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 50px 20px;
+    }
+
+    .content-home h1 {
+        font-size: 2rem;
+    }
+
+    .static-text, .typewriter li {
+        font-size: 1.2rem;
+    }
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
