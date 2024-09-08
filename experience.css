@@ -75,77 +75,7 @@ header {
     transform-origin: left;
 }
 
-.main-container {
-    padding: 100px 20px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.content-home h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.static-text {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.typewriter {
-    list-style: none;
-    height: 40px;
-    overflow: hidden;
-    color: blue;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.typewriter li {
-    position: relative;
-    animation: typing 4s steps(20) infinite;
-}
-
-@keyframes typing {
-    0% {
-        transform: translateY(0);
-    }
-    25% {
-        transform: translateY(-40px);
-    }
-    50% {
-        transform: translateY(-80px);
-    }
-    75% {
-        transform: translateY(-120px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: white;
-}
-
 @media (max-width: 768px) {
-    .main-container {
-        padding: 50px 20px;
-    }
-
-    .content-home h1 {
-        font-size: 2rem;
-    }
-
-    .static-text, .typewriter li {
-        font-size: 1.2rem;
-    }
 
     .nav-container {
         flex-direction: column;
