@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: url("https://img.freepik.com/free-photo/galaxy-night-landscape_23-2148895320.jpg");
+    background: url("https://c02.purpledshub.com/uploads/sites/41/2023/07/The-Sun-thumbnail-c8d6c09.jpg");
     background-size: cover;
     color: white;
 }
@@ -16,7 +16,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 .nav-container {

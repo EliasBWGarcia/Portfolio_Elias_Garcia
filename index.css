@@ -6,16 +6,24 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: url("https://img.freepik.com/free-photo/galaxy-night-landscape_23-2148895320.jpg");
-    background-size: cover;
+   /* Moon: background: url("https://images.unsplash.com/photo-1495239423169-a795244fddcc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHx8fA%3D%3D");
+    Sun: background: url("https://c02.purpledshub.com/uploads/sites/41/2023/07/The-Sun-thumbnail-c8d6c09.jpg");
+    background-size: cover;*/
+    color: black;
+    background-color: white;
+}
+
+body.dark-mode {
+    font-family: 'Arial', sans-serif;
     color: white;
+    background-color: black;
 }
 
 header {
     width: 100%;
-    position: sticky;
     top: 0;
     z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .nav-container {
@@ -75,8 +83,10 @@ header {
 }
 
 .main-container {
+    position: relative;
     padding: 100px 20px;
     text-align: center;
+    align-content: center;
     max-width: 800px;
     margin: 0 auto;
 }
